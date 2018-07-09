@@ -1,0 +1,21 @@
+/* Mixins */
+
+
+// breakpoints
+@mixin small-breakpoint {
+  @media (min-width: #{$sm-screen}) {
+    @content;
+  }
+}
+
+@mixin medium-breakpoint {
+  @media (min-width: #{$md-screen}) {
+    @content;
+  }
+}
+
+@mixin large-breakpoint {
+  @media (min-width: #{$lg-screen}) {
+    @content;
+  }
+}
