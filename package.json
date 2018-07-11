@@ -6,18 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node-sass --output-style expanded src/scss -o dist/css/main.css",
-    "minify-css": "postcss dist/css/main.css -o dist/css/main.min.css",
+    "autofix": "postcss dist/css/main.css -u autoprefixer -r true",
+    "minify-css": "postcss --use cssnano dist/css/main.css -o dist/css/main.min.css",
     "watch-sass": "npm run sass --watch"
   },
   "author": "Rachael Horst",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "autoprefixer": "^8.6.5",
     "browser-sync": "^2.24.5",
     "cssnano": "^4.0.1",
     "node-sass": "^4.9.2",
     "normalize-css": "^2.3.1",
     "postcss-cli": "^5.0.1",
+    "postcss-load-config": "^2.0.0",
     "uglify-js": "^3.4.4",
     "watch": "^1.0.2"
   }

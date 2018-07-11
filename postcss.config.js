@@ -5,6 +5,7 @@ module.exports = {
         svgo: false,
         colormin: false,
       }]
-    })
+    }),
+    require('autoprefixer')({})
   ],
 }
