@@ -5,45 +5,54 @@
     <meta name="author" content="Rachael Horst">
     <meta name="description" content="This is a website for my portfolio...">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <title>Uno - A Basic Website Demo</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.min.css">
 
   </head>
   <body>
-    <heading>
-      <nav class="main">
-        <ul>
-          <li>
-            <a href="intro">Intro</a>
-          </li>
-          <li>
-            <a href="about-us">About Us</a>
-          </li>
-          <li>
-            <a href="services">Services</a>
-          </li>
-          <li>
-            <a href="contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </heading>
-    <main>
-      <div class="intro-section">
-        <section class="header-img">
-          <h1 class="header-title">INTRO SECTION</h1>
-          <h3>One Page Responsive Layout</h3>
-        </section>
+    <header class="main-header">
+      <div class="container">
+        <div class="logo"><img src="images/logo.png" alt="uno logo"></div>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li>
+              <a href="intro">Intro</a>
+            </li>
+            <li>
+              <a href="about-us">About Us</a>
+            </li>
+            <li>
+              <a href="services">Services</a>
+            </li>
+            <li>
+              <a href="contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div class="about-section">
-        <section class="about-features">
+    </header>
+    <section class="banner">
+      <div class="container">
+        <div class="banner-text">
+          <h1 class="title-lg">This Is the Best Thing Ever</h1>
+          <h3 class="title-subtitle">One Page Responsive Layout</h3>
+          <p class="intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Exercitationem earum itaque expedita reprehenderit minima voluptatum nemo, 
+            eum eveniet dicta voluptatibus recusandae maiores dolores quam totam?</p>
+          <button class="btn--primary">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-features">
           <h3>About Section</h3>
-        </section>
-        <section class="about-articles">
+        </div>
+        <div class="about-articles">
           <h3>About Us - Articles/Blog</h3>
-        </section>
-      </div>
+        </div>
+    </section>
       <div class="services-section">
         <section class="services-header">
           <h3>Services</h3>
@@ -57,7 +66,7 @@
       <div class="contact-section">
         put contact form here w/ bg image
       </div>
-    </main>
+
     <footer>
       <div class="footer-content">
         <h3>Footer</h3>
