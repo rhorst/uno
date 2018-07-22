@@ -1,11 +1,13 @@
 // config files and helpers
-
+@import 'abstracts/reset';
 @import 'abstracts/variables';
 
 // vendor files (normalize, bootstrap etc)
+@import 'vendor/normalize';
 
 // base styles (fonts, typography, global settings etc)
-
+@import 'base/base';
+// @import 'base/fonts';
 // layout 
 
 // components (modals, buttons, call to action, etc)

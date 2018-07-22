@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Rachael Horst">
-    <meta name="description" content="This is a website for my portfolio...">
+    <meta name="description" content="This is a website for my portfolio.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Uno - A Basic Website Demo</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.min.css">
 
   </head>
@@ -15,7 +16,7 @@
       <div class="container">
         <div class="logo"><img src="images/logo.png" alt="uno logo"></div>
         <nav class="main-nav">
-          <ul class="nav-list">
+          <ul class="unstyled-list">
             <li>
               <a href="intro">Intro</a>
             </li>
@@ -35,8 +36,8 @@
     <section class="banner">
       <div class="container">
         <div class="banner-text">
-          <h1 class="title-lg">This Is the Best Thing Ever</h1>
-          <h3 class="title-subtitle">One Page Responsive Layout</h3>
+          <h1 class="title-lg">This Is the Hero Section</h1>
+          <h2 class="title-subtitle">One Page Responsive Layout</h2>
           <p class="intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Exercitationem earum itaque expedita reprehenderit minima voluptatum nemo, 
             eum eveniet dicta voluptatibus recusandae maiores dolores quam totam?</p>
@@ -47,32 +48,202 @@
 
     <section class="about-section">
         <div class="about-features">
-          <h3>About Section</h3>
-        </div>
-        <div class="about-articles">
-          <h3>About Us - Articles/Blog</h3>
+          <h2>Featured Products</h2>
+          <div class="about-feature col">
+            <img src="" alt="">
+              <h3>Item 1</h3>
+          </div>
+          <div class="about-feature col">
+              <img src="" alt="">
+                <p>Item 2</p>
+          </div>
+          <div class="about-feature col">
+              <img src="" alt="">
+              <h3>Item 3</h3>
+                <p>Item 3</p>
+          </div>
         </div>
     </section>
-      <div class="services-section">
-        <section class="services-header">
-          <h3>Services</h3>
-          put image here
-        </section>
-        <section class="testimonials">
-          <h3 class="services-testimonials">Testimonials</h3>
-          put four columns here w/ images (cards)
-        </section>
+
+    <section class="services-section">
+      <header class="services-header">
+          <h3>About Us - Services Available</h3>
+      </header>
+        <div class="service">
+          <img src="">
+          <h3>Lorem Ipsum</h3>
+            <p>Something we do</p>
+        </div>
+        <div class="service">
+          <img src="" alt="">
+            <h3>Ipsum Lorem </h3>
+            <p>Something Else we do</p>
+        </div>
+        <div class="service">
+            <img src="" alt="">
+            <h3>Ipsum Lorem </h3>
+              <p>Something Else we do</p>
+        </div>
+        <div class="service">
+            <img src="" alt="">
+            <h3>Ipsum Lorem </h3>
+              <p>Something Else we do</p>
+        </div>
+        <div class="service">
+            <img src="" alt="">
+            <h3>Ipsum Lorem </h3>
+              <p>Something Else we do</p>
+        </div>
+        <div class="service">
+            <img src="" alt="">
+            <h3>Ipsum Lorem </h3>
+            <p>Something Else we do</p>
+        </div>
+    </section>
+    
+    <section class="testimonials">
+        <header class="testimonials">
+            <h3>Testimonials</h3>
+            <p class="intro">See what people had to say about our products.</p>
+        </header>
+        <!-- grid of four, spaced close -->
+          <div class="testimonial">
+            <blockquote>
+              <p>It was quite fit, innit?</p>
+              <p class="author">
+                <img src="images/author1.jpg">
+                <cite>-- Joe Schmoe</cite>
+              </p>
+            </blockquote>
+          </div>
+          <div class="testimonial">
+              <blockquote>
+                <p>Welly welly well! Well well well!</p>
+                <p class="author">
+                  <img src="images/author2.jpg">
+                  <cite>-- Jane Schmoe</cite>
+                </p>
+              </blockquote>
+          </div>
+          <div class="testimonial">
+              <blockquote>
+                <p>It was quite fit, innit?</p>
+                <p class="author">
+                  <img src="images/author1.jpg">
+                  <cite>-- Joe Schmoe</cite>
+                </p>
+              </blockquote>
+          </div>
+          <div class="testimonial">
+              <blockquote>
+                <p>It was quite fit, innit?</p>
+                <p class="author">
+                  <img src="images/author1.jpg">
+                  <cite>-- Joe Schmoe</cite>
+                </p>
+              </blockquote>
+          </div>
+    </section>
+
+    <section class="blog">
+      <header>
+        <h2>We Are So SMRT</h2>
+        <p class="subtitle">We write articles and influence people.</p>
+      </header>
+      <article class="post">
+        <span class="date">Sep 29, 1999</span>
+        <h3>
+          <a href="#">We Are the Future</a>
+        </h3>
+          <p>Here is a blurb from the article.
+            Blurb blarhb blurhb.
+          </p>
+          <p class="author">
+            <img src="images/person1.png" alt="something">
+            <cite>Mary May Jane</cite>
+          </p>
+        
+      </article>
+      <article class="post">
+        <span class="date">Sep 14, 1999</span>
+        <h3>
+          <a href="#">How to Run a Pub</a>
+        </h3>
+          <p>Here is a blurb from the article.
+            Blurb blarhb blurhb.
+          </p>
+          <p class="author">
+            <img src="images/person1.png" alt="something">
+            <cite>Moe Szyslak</cite>
+          </p>
+        </article>
+        <article class="post">
+          <span class="date">Sep 10, 1999</span>
+          <h3>
+            <a href="#">Previous Article</a>
+          </h3>
+            <p>Here is a another thing. Lorem ipsum dolor sit amet 
+              consectetur adipisicing elit. Vitae omnis illo sed tenetur, 
+              vel praesentium quaerat quam dignissimos fuga tempora labore,
+              molestiae corrupti quas facere suscipit at?               </p>
+            <p class="author">
+              <img src="images/person1.png" alt="something">
+              <cite>Molly Malkovich</cite>
+            </p>
+        </article>
+    </section>
+
+    <section class="contact-section">
+      <header class="contact">
+        <h2>Contact Us</h2>
+      </header>
+      <div class="container">
+        <div class="col">
+          <form action=" ">
+            <div class="form-group">
+              <label for="form-name">Full Name</label>
+              <input type="text" id="form-name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email</label>
+              <input type="text" id="form-email" placeholder="name@email.com">
+            </div>
+            <div class="form-group">
+              <label for="form-subject">Subject</label>
+              <input type="text" id="form-subject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <input type="textarea" id="form-message" placeholder="Enter Your Message Here" rows="5">
+            </div>
+            <button type="submit" class="btn-secondary">Submit</button>
+          </form>
+        </div>
+        <div class="col">
+          <!-- maybe put a map here? (optional) -->
+        </div>
       </div>
-      <div class="contact-section">
-        put contact form here w/ bg image
-      </div>
+    </section>
 
     <footer>
-      <div class="footer-content">
-        <h3>Footer</h3>
-        words here 
+      <div class="container">
+        <p>Bringing you the best of the best!</p>
+        <ul class="unstyled-list social-media-links">
+          <li><a href=""><i class="fab fa-facebook"></i> facesmash</a></li>
+          <li><a href=""></a></li> 
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+        </ul>
+        <ul class="unstyled-list nav-footer">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
         <hr>
-        <p class="copywrite">Copyright 2018 Whatever | Example by RH</p>
+        <p class="copywrite">Copyright 2018 | Example by RH</p>
       </div>
     </footer>
   </body>

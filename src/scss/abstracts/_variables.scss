@@ -18,17 +18,15 @@ $md-screen: $medium;
 $lg-screen: $large;
 /* Colors */
 
-$background: white; 
-$primary-color: #0366EE;
-$secondary-color: #29de7d; 
-$accent-color: #cdcdcd;
+$background: #f0f4f8;
+$primary-color: #326771;
+$secondary-color: #f0f5f9;
+$accent-color: #F73859;
 $alternate-background: #fafafa;
-$alternate-color: #404040;
+$text-dark: #404040;
 $link-color: $primary-color;
 $link-hover-color: darken($link-color, 15%);
-$highlight: #ffeea8;
-$error: #D33C40;
-$bq-border: 16px solid #f0f0f0;
+$shim: rgba(42,51,86,.9);
 
 /* Typography */
 
@@ -38,13 +36,13 @@ $body-font-size: 1rem;
 $font-style: normal;
 $font-variant: normal;
 $font-weight: normal;
-$font-color: #404040;
+$font-color: #444444;
 $font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
 $line-height: 1.6;
 
 // Headings
-$heading-font-color: #404040;
-$heading-font-weight: 600;
+$heading-font-color: #000000;
+$heading-font-weight: 300;
 $heading-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
 $heading-line-height: 1.2;
 
