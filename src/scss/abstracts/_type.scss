@@ -1,0 +1,91 @@
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+body,
+input,
+select,
+textarea {
+    color: $text-dark;
+    font-family: $font-stack;
+    font-size: 100%;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-headings;
+    clear: both;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+dfn,
+cite,
+em {
+    font-style: italic;
+}
+
+blockquote {
+    margin: 0 1.5em;
+}
+
+address {
+    margin: 0 0 1.5em;
+}
+
+pre {
+    background: #eee;
+    font-family: $font-mono;
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+    font: 15px, $font-mono;
+}
+
+
+h1 {
+    font-size: 2em;
+    line-height: 1.25;
+}
+
+h2 {
+    font-size: 1.6em;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 1.4em;
+    line-height: 1.15;
+}
+
+h4 {
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+/* responsive typography */
+

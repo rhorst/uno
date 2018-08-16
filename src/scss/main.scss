@@ -1,13 +1,73 @@
+/* order of imports: 
+1. vendor dependencies: compass, bootstrap etc
+2. authored depdendencies: mixins, variables
+3. base styles: fonts, typography, resets
+4. laout styles
+5. module styles
+6. views styles
+
+*/
+
+
 // config files and helpers
-@import 'abstracts/reset';
 @import 'abstracts/variables';
+@import 'abstracts/reset';
+@import 'abstracts/type';
 
 // vendor files (normalize, bootstrap etc)
 @import 'vendor/normalize';
 
 // base styles (fonts, typography, global settings etc)
 @import 'base/base';
-// @import 'base/fonts';
+
 // layout 
 
 // components (modals, buttons, call to action, etc)
+@import 'components/buttons';
+
+/*
+|– abstracts/
+|   |– _variables.scss    # Sass Variables
+|   |– _functions.scss    # Sass Functions
+|   |– _mixins.scss       # Sass Mixins
+|   |– _placeholders.scss # Sass Placeholders
+|
+|– base/
+|   |– _reset.scss        # Reset/normalize
+|   |– _typography.scss   # Typography rules
+|   …                     # Etc.
+|
+|– components/
+|   |– _buttons.scss      # Buttons
+|   |– _carousel.scss     # Carousel
+|   |– _cover.scss        # Cover
+|   |– _dropdown.scss     # Dropdown
+|   …                     # Etc.
+|
+|– layout/
+|   |– _navigation.scss   # Navigation
+|   |– _grid.scss         # Grid system
+|   |– _header.scss       # Header
+|   |– _footer.scss       # Footer
+|   |– _sidebar.scss      # Sidebar
+|   |– _forms.scss        # Forms
+|   …                     # Etc.
+|
+|– pages/
+|   |– _home.scss         # Home specific styles
+|   |– _contact.scss      # Contact specific styles
+|   …                     # Etc.
+|
+|– themes/
+|   |– _theme.scss        # Default theme
+|   |– _admin.scss        # Admin theme
+|   …                     # Etc.
+|
+|– vendors/
+|   |– _bootstrap.scss    # Bootstrap
+|   |– _jquery-ui.scss    # jQuery UI
+|   …                     # Etc.
+|
+`– main.scss              # Main Sass file
+
+*/
