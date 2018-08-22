@@ -5,18 +5,25 @@ html {
   margin: 0;
   padding: 0;
   border: 0; 
-
+  font-family: $font-stack;
 }
 body {
-  background: $background;
+  background-color: $background;
   color: $text-dark;
-}
-
-.container {
-  width: 95%;
   
 }
+@media screen and (max-width: 480px) {
+  body, html {
+    min-width: 380px;
+  }
+}
 
-html {
-  font-family: $font-stack;
+img {
+  height: auto;
+  max-width: 100%;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }

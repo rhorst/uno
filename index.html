@@ -7,16 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Uno - A Basic Website Demo</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- stylesheet for font awesome -->
     <link rel="stylesheet" href="dist/css/all.min.css">
-    <link rel="stylesheet" href="dist/css/main.css">
+    
+    <!-- stylesheet for custom styles -->
+    <link rel="stylesheet" href="dist/css/main.min.css">
 
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <div class="logo"><img src="images/logo.png" alt="uno logo"></div>
-        <nav class="main-nav">
-          <ul class="unstyled-list">
+      <div class="container grid">
+      <div class="logo"><img src="dist/images/uno-two.png" alt="uno logo"></div>
+      <nav class="main-nav">
+          <ul>
             <li>
               <a href="intro">Intro</a>
             </li>
@@ -31,23 +35,26 @@
             </li>
           </ul>
         </nav>
+        <a href="#navToggleBtn" class="navToggle button">Menu</a>
       </div>
     </header>
-    <section class="banner">
-      <div class="container">
-        <div class="banner-text">
+
+    <section class="hero">
+      <div class="container grid">
+        <div class="text-hero col col--2-3">
           <h1 class="title-lg">This Is the Hero Section</h1>
           <h2 class="title-subtitle">One Page Responsive Layout</h2>
-          <p class="intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          <p class="text-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Exercitationem earum itaque expedita reprehenderit minima voluptatum nemo, 
             eum eveniet dicta voluptatibus recusandae maiores dolores quam totam?</p>
-          <button class="btn--primary">Learn More</button>
+          <button class="btn btn--primary">Learn More</button>
         </div>
       </div>
     </section>
 
     <section class="about-section">
-      <img src="dist/images/miami-deco1-small.jpg" alt="art deco miami architecture">
+      <div class="container grid">
+      <img src="dist/images/miami-deco1-small.jpg" alt="art deco miami architecture" style="width:300px;">
         <div class="about-features">
           <h2>Featured Products</h2>
           <div class="about-feature col">
@@ -69,9 +76,11 @@
               <p>item 4</p>
           </div>
         </div>
+      </div>
     </section>
 
     <section class="services-section">
+      <div class="container grid">
       <header class="services-header">
           <h3>Counter Section</h3>
       </header>
@@ -91,8 +100,10 @@
             <h3>number </h3>
               <p>Something Else we do</p>
         </div>
+      </div>
     </section>
     <section class="tabbed-menu">
+      <div class="container grid">
       <div class="inner">
         <div class="tabs">
           <ul class="titles">
@@ -118,14 +129,15 @@
           </div>
         </div>
       </div>
+    </div>
     </section>
 
-    <section class="testimonials">
+    <!-- <section class="testimonials">
+      <div class="container grid">
         <header class="testimonials">
             <h3>Testimonials</h3>
             <p class="intro">See what people had to say about our products.</p>
         </header>
-        <!-- grid of four, spaced close -->
           <div class="testimonial">
             <blockquote>
               <p>It was quite fit, innit?</p>
@@ -162,11 +174,13 @@
                 </p>
               </blockquote>
           </div>
-    </section>
+        </div>
+    </section> -->
 
     <section class="blog">
+      <div class="container grid">
       <header>
-        <h2>We Are So SMRT</h2>
+        <h2>We Are So Neat</h2>
         <p class="subtitle">We write articles and influence people.</p>
       </header>
       <article class="post">
@@ -210,9 +224,11 @@
               <cite>Molly Malkovich</cite>
             </p>
         </article>
+      </div>
     </section>
 
     <section class="contact-section">
+      <div class="container grid">
       <header class="contact">
         <h2>Contact Us</h2>
       </header>
@@ -242,10 +258,11 @@
           <!-- maybe put a map here? (optional) -->
         </div>
       </div>
+    </div>
     </section>
 
     <footer>
-      <div class="container">
+      <div class="container grid">
         <p>Bringing you the best of the best!</p>
         <ul class="unstyled-list social-media-links">
           <li><a href=""><i class="fab fa-facebook"></i> facesmash</a></li>

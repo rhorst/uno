@@ -1,0 +1,16 @@
+.hero {
+  background-image: url(../../../dist/images/night-canyon-large.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 10px solid $accent-color;
+  color: $text-light;
+  position: relative;
+
+  padding: 4em 0 1em 0;
+  text-align: center;
+}
+
