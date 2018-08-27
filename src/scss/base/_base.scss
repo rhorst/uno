@@ -12,11 +12,7 @@ body {
   color: $text-dark;
   
 }
-@media screen and (max-width: 480px) {
-  body, html {
-    min-width: 380px;
-  }
-}
+
 
 img {
   height: auto;

@@ -1,4 +1,5 @@
 .hero {
+  background-color: $accent-color;
   background-image: url(../../../dist/images/night-canyon-large.jpg);
   background-size: cover;
   background-position: center;
@@ -9,8 +10,11 @@
   border-top: 10px solid $accent-color;
   color: $text-light;
   position: relative;
-
+  width: 100%;
   padding: 4em 0 1em 0;
   text-align: center;
+  min-height: 0;
+
+  
 }
 
