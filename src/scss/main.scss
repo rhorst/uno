@@ -1,10 +1,13 @@
 // 1. abstracts- variables, mixins, etc 
 @import 'abstracts/variables';
-@import 'abstracts/mappy-breakpoints';
 @import 'abstracts/reset';
 
 // 2. vendor files (normalize, bootstrap etc)
 @import 'vendor/normalize';
+@import 'vendor/mappy-breakpoints';
+
+// 2.a. vendor extensions (custom overrides)
+@import 'vendor-extensions/mappy-breakpoints';
 
 // base styles (fonts, typography, resets, global settings, etc)
 @import 'base/base';
