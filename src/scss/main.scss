@@ -7,7 +7,7 @@
 @import 'vendor/mappy-breakpoints';
 
 // 2.a. vendor extensions (custom overrides)
-@import 'vendor-extensions/mappy-breakpoints';
+@import 'vendors-extensions/mappy-breakpoints';
 
 // base styles (fonts, typography, resets, global settings, etc)
 @import 'base/base';
@@ -16,7 +16,7 @@
 // layout ( macro styles: grid, header, footer, sidebar, forms, navigation, etc)
 @import 'layout/grid';
 @import 'layout/header';
-@import 'layout/navigation';
+// @import 'layout/navigation';
 @import 'layout/hero';
 
 // components ( micro styles: widgets like modals, buttons, carousel, thumbnails etc)

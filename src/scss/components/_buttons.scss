@@ -1,0 +1,42 @@
+.btn {
+  display: inline-block;
+  padding: .5em 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  margin: 1em;
+}
+
+.btn--plain {
+  border: 2px solid $primary-color;
+  background: transparent;
+  color: $text-dark;
+  
+  &:hover,
+  &:focus {
+    background: $alternate-background;
+  }
+}
+
+.btn--primary {
+  border: 2px solid $primary-color;
+  background: $primary-color;
+  color: $text-light;
+
+  &:hover,
+  &:focus {
+    background: darken($primary-color, 20%);
+  }
+}
+
+.btn--secondary {
+  border: 2px solid $accent-color;
+  background: $accent-color;
+  color: $text-dark;
+
+  &:hover,
+  &:focus {
+    background: darken($accent-color, 20%);
+  }
+}

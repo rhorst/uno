@@ -17,10 +17,9 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container grid">
-      <div class="logo"><img src="dist/images/uno-two.png" alt="uno logo"></div>
+      <a href="index.html"class="logo"><img src="dist/images/uno-two.png" alt="uno logo"></a>
       <nav class="main-nav">
-          <ul>
+          <ul class="unstyled-list">
             <li>
               <a href="intro">Intro</a>
             </li>
@@ -36,7 +35,6 @@
           </ul>
         </nav>
         <a href="#navToggleBtn" class="navToggle button">Menu</a>
-      </div>
     </header>
 
     <section class="hero">
@@ -45,8 +43,7 @@
           <h1 class="title-lg">This is Uno</h1>
           <h2 class="title-subtitle">One Page Responsive Layout</h2>
           <hr>
-          <p class="text-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem earum itaque expedita?</p>
-          <button class="btn btn--primary">Learn More</button>
+          <a class="btn btn--primary">Learn More</a>
         </div>
       </div>
     </section>
@@ -55,6 +52,7 @@
       <div class="container grid">
       <img src="dist/images/miami-deco1-small.jpg" alt="art deco miami architecture" style="width:300px;">
         <div class="about-features">
+          <h1>Feature long Title Tis is a long Title</h1>
           <h2>Featured Products</h2>
           <div class="about-feature col">
             <i class="fal fa-air-freshener"></i>
@@ -116,7 +114,7 @@
                 <div class="panel-content">
                   <h2>Title Is THe BEst</h2>
                   <p>This is a paragraph. This is a paragraph with words. Something something.</p>
-                  <button class="btn-plain">This button is plain</button>
+                  <a class="btn btn--plain">This button is plain</a>
                 </div>
                 <div class="panel-img">
                   <img src="dist/images/forest.jpg" alt="a camper car parked in front of a forest">
@@ -250,7 +248,7 @@
               <label for="form-message">Message</label>
               <input type="textarea" id="form-message" placeholder="Enter Your Message Here" rows="5">
             </div>
-            <button type="submit" class="btn-secondary">Submit</button>
+            <button type="submit" class="btn btn--secondary">Submit</button>
           </form>
         </div>
         <div class="col">
@@ -281,5 +279,6 @@
         <p class="copywrite">Copyright 2018 | Example by RH</p>
       </div>
     </footer>
+    <script src="dist/js/nav-scroll.js"></script>
   </body>
 </html>
