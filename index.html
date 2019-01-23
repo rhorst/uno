@@ -17,7 +17,7 @@
   </head>
   <body>
     <header class="main-header">
-      <a href="index.html"class="logo"><img src="dist/images/uno-two.png" alt="uno logo"></a>
+      <!-- <a href="index.html"class="logo"><img src="dist/images/uno-two.png" alt="uno logo"></a> -->
       <nav class="main-nav">
           <ul>
             <li>
@@ -34,12 +34,14 @@
             </li>
           </ul>
         </nav>
-        <div class="nav-toggle">
-          <div class="burgerbtn"></div>
-        </div>
     </header>
-
+  <div class="container-all">
     <section class="hero">
+        <button class="menu-button">
+            <svg width="32" height="32">
+              <g><path fill="#f3fffa" d="m4,10l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2zm24,4l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2zm0,8l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2z"/>
+              </g></svg>
+          </button>
       <div class="container grid">
         <div class="hero-inner col col--2-3">
           <h1 class="title-lg">This is Uno</h1>
@@ -281,6 +283,7 @@
         <p class="copywrite">Copyright 2018 | Example by RH</p>
       </div>
     </footer>
+  </div> <!-- /.container-all -->
     <script src="dist/js/nav-scroll.js"></script>
     <script src="dist/js/nav.js"></script>
   </body>

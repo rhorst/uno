@@ -9,6 +9,7 @@ nav {
   z-index: 100;
   // overflow: hidden;
   transform: translateX(-100%);
+  transition: transform ease-out 250ms;
 
   ul {
     list-style: none;
@@ -40,35 +41,35 @@ nav {
 }
 
 // burger menu
-.nav-toggle {
-  display: block;
-  // background: magenta;
-  padding: 1em;
+// .nav-toggle {
+//   display: block;
+//   // background: magenta;
+//   // padding: 1em;
+//   position: absolute;
+//   right: 1em;
+//   top: 1em;
+//   cursor: pointer;
+// }
+.menu-button {
   position: absolute;
-  right: 1em;
   top: 1em;
-  cursor: pointer;
+  left: 1em;
+  background: transparent;
+  color: $secondary-color;
+  border: none;
 }
 
-.burgerbtn, .burgerbtn::before, .burgerbtn::after {
-  content: '';
-  display: block;
-  width: 1.5em;
-  height: 3px;
-  background: $secondary-color;
 
-}
-
-.burgerbtn::before {
-  transform: translateY(-6px);
-}
-
-.burgerbtn::after {
-  transform: translateY(3px);
-}
 
 .nav-visible {
   nav {
     transform: translateX(0);
   }
+  .container-all {
+    transform: translateX(85%);
+  }
+}
+
+.container-all {
+  transition: transform ease-out 250ms;
 }
