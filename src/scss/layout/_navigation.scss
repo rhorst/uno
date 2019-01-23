@@ -1,6 +1,6 @@
 nav {
   background: $accent-color;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
@@ -22,10 +22,12 @@ nav {
   }
   li {
     flex: 1 1 auto;
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
     display: flex;
     align-items:center;
     justify-content: center;
+    &:not(:last-of-type) {
+      border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
   }
   a {
     color: $text-light;
@@ -59,6 +61,8 @@ nav {
 
 
 .nav-visible {
+  height: 100vh;
+  overflow-y: hidden;
   nav {
     transform: translateX(0);
   }
@@ -70,6 +74,9 @@ nav {
   }
   .menu-icon {
     display: none;
+  }
+  .menu-button {
+    transform: translateX(70%);
   }
 }
 
