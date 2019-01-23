@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Uno - A Basic Website Demo</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    
+
     <!-- stylesheet for font awesome -->
     <link rel="stylesheet" href="dist/css/all.min.css">
-    
+
     <!-- stylesheet for custom styles -->
     <link rel="stylesheet" href="dist/css/main.min.css">
 
@@ -19,7 +19,7 @@
     <header class="main-header">
       <a href="index.html"class="logo"><img src="dist/images/uno-two.png" alt="uno logo"></a>
       <nav class="main-nav">
-          <ul class="unstyled-list">
+          <ul>
             <li>
               <a href="intro">Intro</a>
             </li>
@@ -34,7 +34,9 @@
             </li>
           </ul>
         </nav>
-        <a href="#navToggleBtn" class="navToggle button">Menu</a>
+        <div class="nav-toggle">
+          <div class="burgerbtn"></div>
+        </div>
     </header>
 
     <section class="hero">
@@ -52,7 +54,7 @@
       <div class="container grid">
       <img src="dist/images/miami-deco1-small.jpg" alt="art deco miami architecture" style="width:300px;">
         <div class="about-features">
-          <h1>Feature long Title Tis is a long Title</h1>
+          <h1>Feature Long Title - This is a Longer Title</h1>
           <h2>Featured Products</h2>
           <div class="about-feature col">
             <i class="fal fa-air-freshener"></i>
@@ -112,7 +114,7 @@
             <div class="panel">
               <div class="split">
                 <div class="panel-content">
-                  <h2>Title Is THe BEst</h2>
+                  <h2>This will Be a Tabbed menu</h2>
                   <p>This is a paragraph. This is a paragraph with words. Something something.</p>
                   <a class="btn btn--plain">This button is plain</a>
                 </div>
@@ -192,7 +194,7 @@
             <img src="images/person1.png" alt="something">
             <cite>Mary May Jane</cite>
           </p>
-        
+
       </article>
       <article class="post">
         <span class="date">Sep 14, 1999</span>
@@ -212,8 +214,8 @@
           <h3>
             <a href="#">Previous Article</a>
           </h3>
-            <p>Here is a another thing. Lorem ipsum dolor sit amet 
-              consectetur adipisicing elit. Vitae omnis illo sed tenetur, 
+            <p>Here is a another thing. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Vitae omnis illo sed tenetur,
               vel praesentium quaerat quam dignissimos fuga tempora labore,
               molestiae corrupti quas facere suscipit at?               </p>
             <p class="author">
@@ -263,7 +265,7 @@
         <p>Bringing you the best of the best!</p>
         <ul class="unstyled-list social-media-links">
           <li><a href=""><i class="fab fa-facebook"></i> facesmash</a></li>
-          <li><a href=""></a></li> 
+          <li><a href=""></a></li>
           <li><a href=""></a></li>
           <li><a href=""></a></li>
           <li><a href=""></a></li>
@@ -280,5 +282,6 @@
       </div>
     </footer>
     <script src="dist/js/nav-scroll.js"></script>
+    <script src="dist/js/nav.js"></script>
   </body>
 </html>

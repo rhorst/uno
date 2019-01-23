@@ -1,15 +1,21 @@
-.main-nav {
+nav {
   background: $accent-color;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
+  right: 15%;
   height: 100vh;
   z-index: 100;
+  // overflow: hidden;
+  transform: translateX(-100%);
+
   ul {
+    list-style: none;
     display: flex;
     flex-flow: column;
-    text-align: center;
+    // text-align: center;
+    align-items: center;
     height: 100%;
     justify-content: space-around;
   }
@@ -24,9 +30,45 @@
     color: $text-light;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 1em 0;
+    width: 100%;
+    line-height: 0;
     &:hover {
       color: darken($text-light, 20%);
     }
   }
 }
 
+// burger menu
+.nav-toggle {
+  display: block;
+  // background: magenta;
+  padding: 1em;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  cursor: pointer;
+}
+
+.burgerbtn, .burgerbtn::before, .burgerbtn::after {
+  content: '';
+  display: block;
+  width: 1.5em;
+  height: 3px;
+  background: $secondary-color;
+
+}
+
+.burgerbtn::before {
+  transform: translateY(-6px);
+}
+
+.burgerbtn::after {
+  transform: translateY(3px);
+}
+
+.nav-visible {
+  nav {
+    transform: translateX(0);
+  }
+}
