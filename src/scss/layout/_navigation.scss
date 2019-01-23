@@ -4,7 +4,7 @@ nav {
   top: 0;
   right: 0;
   left: 0;
-  right: 15%;
+  right: 20%;
   height: 100vh;
   z-index: 100;
   // overflow: hidden;
@@ -40,16 +40,6 @@ nav {
   }
 }
 
-// burger menu
-// .nav-toggle {
-//   display: block;
-//   // background: magenta;
-//   // padding: 1em;
-//   position: absolute;
-//   right: 1em;
-//   top: 1em;
-//   cursor: pointer;
-// }
 .menu-button {
   position: absolute;
   top: 1em;
@@ -57,7 +47,14 @@ nav {
   background: transparent;
   color: $secondary-color;
   border: none;
+  .menu-icon {
+    display: block;
+  }
+  .close-icon {
+    display: none;
+  }
 }
+
 
 
 
@@ -66,7 +63,13 @@ nav {
     transform: translateX(0);
   }
   .container-all {
-    transform: translateX(85%);
+    transform: translateX(80%);
+  }
+  .close-icon {
+    display: block;
+  }
+  .menu-icon {
+    display: none;
   }
 }
 
