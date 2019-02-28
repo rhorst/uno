@@ -1,2 +1,7 @@
 // /* Mixins */
 
+@mixin container($width: 90%, $max-width: 80em) {
+    width: $width;
+    margin: 0 auto;
+    max-width: $max-width;
+}

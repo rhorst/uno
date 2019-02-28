@@ -14,6 +14,12 @@ body {
   display: grid;
 }
 
+section {
+  @media screen and (min-width:565px) {
+    padding: 5em 0 3em 0;
+  }
+  padding: 3em 0 1em
+}
 
 img {
   height: auto;

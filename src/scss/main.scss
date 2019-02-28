@@ -1,6 +1,7 @@
 // 1. abstracts- variables, mixins, etc
 @import 'abstracts/variables';
 @import 'abstracts/reset';
+@import 'abstracts/mixins';
 
 // 2. vendor files (normalize, bootstrap etc)
 @import 'vendor/normalize';
