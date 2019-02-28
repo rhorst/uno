@@ -10,12 +10,22 @@
   border-top: 10px solid $accent-color;
   color: $text-light;
   position: relative;
-  width: 100%;
-  padding: 4em 0 1em 0;
-  text-align: center;
-  min-height: 0;
+  flex-flow: column;
+  // width: 100%;
+  // padding: 4em 0 1em 0;
+  // text-align: center;
+  // min-height: 0;
+  h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    span {
+      color: $accent-color;
+    }
+  }
+  h2 {
+    font-family: $font-ss;
+    font-weight: lighter;
+  }
 
-}
-.hero-inner {
-  margin: 1em auto 0  ;
 }

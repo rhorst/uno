@@ -2,14 +2,14 @@
 Typography
 --------------------------------------------------------------*/
 
-// base settings 
+// base settings
 
 body,
 input,
 select,
 textarea {
     color: $text-dark;
-    font-family: $font-stack;
+    font-family: $font-ss;
     // font-size: 100%;
     font-size: inherit;
     line-height: 1.5;
@@ -22,7 +22,7 @@ h3,
 h4,
 h5,
 h6, {
-    font-family: $font-headings;
+    font-family: $font-serif;
     margin: 0 0 1rem;
     &:last-child {
         margin: 0;
