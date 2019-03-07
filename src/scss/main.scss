@@ -5,10 +5,6 @@
 
 // 2. vendor files (normalize, bootstrap etc)
 @import 'vendor/normalize';
-@import 'vendor/mappy-breakpoints';
-
-// 2.a. vendor extensions (custom overrides)
-@import 'vendors-extensions/mappy-breakpoints';
 
 // base styles (fonts, typography, resets, global settings, etc)
 @import 'base/base';
@@ -20,6 +16,7 @@
 @import 'layout/navigation';
 @import 'layout/hero';
 @import 'layout/about';
+@import 'layout/stats';
 
 // components ( micro styles: widgets like modals, buttons, carousel, thumbnails etc)
 // Note that this should be a lot of files because ideally your site is mostly components
