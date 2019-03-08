@@ -1,24 +1,42 @@
 .stats-section {
-    @include container;
     padding: 5em 0 3em 0;
-    background-color: $accent-color;
-    display: flex;
-    justify-content: space-between;
-    color: $secondary-color;
-    article {
-        padding: 0 1.5em;
-        h3 {
-            color: inherit;
-            span {
-                display: block;
-                font-size: 2em;
-                font-weight: 300;
-                line-height: 1;
-                margin-bottom: .25em;
+    background: $accent-color;
+    .stats {
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        color: $secondary-color;
+        margin: 0 0 2em 0;
+        article {
+            padding: 0 1.5em;
+            text-align: center;
+            border-color: rgba(255, 255, 255, 0.4);
+            border-right-width: 1px;
+            border-right-style: solid;
+
+            &:last-child {
+                border-right-width: 0;
             }
-        }
-        p {
-            font-weight: 100;
+            h3 {
+                color: inherit;
+                line-height: 1.5;
+                font-size: 1.3em;
+                letter-spacing: 0.05em;
+                margin: 0 0 1em 0;
+                span {
+                    display: block;
+                    font-size: 3em;
+                    font-weight: 300;
+                    line-height: 1;
+                    margin-bottom: .25em;
+                }
+            }
+            p {
+                font-weight: 100;
+                font-size: 1.3em;
+                margin: 0;
+                font-family: $font-serif;
+            }
         }
     }
 }
