@@ -8,7 +8,19 @@
 
 /* media queries */
 
-@mixin bp--phone-only {
+@mixin bp--xs {
     @media (max-width: 480px) { @content };
 }
-// @mixin bp--
+@mixin bp--sm {
+    @media (min-width: 481px) { @content };
+}
+@mixin bp--md {
+    @media (min-width: 736px) { @content };
+}
+@mixin bp--lg {
+    @media (min-width: 980px) { @content };
+}
+@mixin bp--xl {
+    @media (min-width: 1200px) { @content };
+}
+
