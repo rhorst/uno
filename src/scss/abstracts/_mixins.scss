@@ -5,3 +5,10 @@
     margin: 0 auto;
     max-width: $max-width;
 }
+
+/* media queries */
+
+@mixin bp--phone-only {
+    @media (max-width: 480px) { @content };
+}
+// @mixin bp--
